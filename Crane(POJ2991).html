@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>POJ 2991</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-slider.min.css">
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/Popper.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="view">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-12 column jumbotron">
+                    <h1 class="text-center">Crane (POJ 2991)</h1>
+                    <p>
+                        TimeStamp: 2018/5/11 (Today:
+                        <b id="today"></b>)
+                        <br> Evironment: 
+                        <b id="version"></b>
+                        <br> Experimental Staff: Dai Shuyuan(
+                        <b id="name"></b>)
+                    </p>
+                </div>
+            </div>
+            <div id="controlPanel" class="row clearfix">
+                <div class="col-md-6 column">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="segments" placeholder="please input segments same as 1,1,2,3,5,8">
+                    </div>
+                </div>
+                <div class="col-md-6 column">
+                    <button id="certain" onclick="initDrawing()" class="btn btn-primary btn-large" title="Tips" data-container="body" data-toggle="popover"
+                        data-placement="right" data-content="Please input some segments splited by comma.">Certain</button>
+                </div>
+            </div>
+            <div id="viewPanel" class="row clearfix" style="margin-top:1%;display:none;">
+                <div class="col-md-6 column">
+                    <canvas id="view" width="500px" height="500px" style="
+                        background-image: linear-gradient(45deg,#4d61ee,rgba(0, 0, 0, 0),#89dc74);
+                        border-style: dashed;
+                        border-color: aliceblue;">
+                        Your browser don't support canvas - dsy
+                    </canvas>
+                </div>
+                <div class="col-md-6 column">
+                    <table id="segControllors" class="table table-striped"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./mineJs/commonIniter.js"></script>
+    <script type="text/javascript" src="./mineJs/crane/SegmentTree.js"></script>
+    <script type="text/javascript" src="./mineJs/crane/SegmentView.js"></script>
+</body>
+
+</html>

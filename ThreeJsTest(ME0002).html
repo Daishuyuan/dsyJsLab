@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ME 0002</title>
+    <style type="text/css">
+        div#view {
+            border: none;
+            cursor: pointer;
+            background-color: #000000;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-slider.min.css">
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/Popper.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script src="js/libs/dat.gui.min.js"></script>
+    <script type="text/javascript" src="js/three.min.js"></script>
+    <script src="js/controls/FirstPersonControls.js"></script>
+    <script src="js/controls/TrackballControls.js"></script>
+    <script src="js/controls/OrbitControls.js"></script>
+    <script src="js/Detector.js"></script>
+    <script src="js/ImprovedNoise.js"></script>
+    <script src="js/libs/stats.min.js"></script>
+</head>
+<body>
+    <div class="view">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-12 column jumbotron">
+                    <h1 class="text-center">The ThreeJsTest</h1>
+                    <p>
+                        TimeStamp: 2018/5/11 (Today:
+                        <b id="today"></b>)
+                        <br> Evironment: 
+                        <b id="version"></b>
+                        <br> Experimental Staff: Dai Shuyuan(
+                        <b id="name"></b>)
+                        <br> Mouse Position: <b id="mousePointer">(0,0)</b>
+                        <br> Key Code: <b id="keyCoder">None(-1)</b>
+                    </p>
+                </div>
+            </div>
+            <div id="viewPanel" class="row clearfix" style="margin-top:1%;">
+                <div class="col-md-6 column">
+                    <div id="view" style="width:500px;height:500px;"></div>
+                </div>
+                <div class="col-md-6 column">
+                    <table id="segControllors" class="table table-striped">
+                        <tr>
+                            <td colspan="4"><h3 class="text-center">Control Panel</h3></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="animateSwitcher" onclick="animateSwitch()" class="btn btn-primary btn-large">Open Game</button>
+                            </td>
+                            <td>
+                                <button id="shadowSwitcher" onclick="shadowSwitch()" class="btn btn-primary btn-large">Open Shadow</button>
+                            </td>
+                            <td>
+                                <button id="boxControllor" onclick="boxControl()" class="btn btn-primary btn-large">Open BoxControl</button>
+                            </td>
+                            <td>
+                                <button id="orbitSwitcher" onclick="orbitSwitch()" class="btn btn-primary btn-large">Open Orbit</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="helperSwitcher" onclick="helperSwitch()" class="btn btn-primary btn-large">Open Helper</button>
+                            </td>
+                            <td>
+                                <button id="mountainsSwitcher" onclick="addMountains()" class="btn btn-primary btn-large">Add Mountains</button>
+                            </td>
+                            <td>
+                                <button id="planeSwitcher" onclick="addPlane()" class="btn btn-primary btn-large">Add Plane</button>
+                            </td>
+                            <td>
+                                <button id="" onclick="" class="btn btn-primary btn-large">None</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./mineJs/commonIniter.js"></script>
+    <script type="text/javascript" src="./mineJs/threejsTest/disco.js"></script>
+    <script type="text/javascript" src="./mineJs/threejsTest/geometry.js"></script>
+</body>
+</html>
