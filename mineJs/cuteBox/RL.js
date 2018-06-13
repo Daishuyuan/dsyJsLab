@@ -59,8 +59,8 @@ class QLearningTable extends RL {
 
     learn(s,a,r,s_) {
         this.check_state_exist(s_);
-        let q_predict = this.q_table[s][a], q_target;
-        if (s_ != 'terminal') {
+        let q_predict = this.q_table[s][a], q_target = 0;
+        if (s_ != ' ') {
             let maxValue = -Infinity;
             for (let q_value of this.q_table[s_]) {
                 if (q_value > maxValue) {
