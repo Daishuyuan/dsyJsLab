@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>ME 0004</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-slider.min.css">
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/Popper.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/mineJs/commonIniter.js"></script>
+    <script type="text/javascript" src="/mineJs/cuteBox/RL.js"></script>
+    <script type="text/javascript" src="/js/tensorflow.min.js"></script>
+    <script type="text/javascript" src="/js/Box2dWeb-2.1.a.3.min.js"></script>
+    <script type="text/javascript" src="/mineJs/basketball/game.js"></script>
+</head>
+
+<body onload="init();">
+    <div class="view">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-12 column jumbotron">
+                    <h1 class="text-center">Basketball (ME 0004)</h1>
+                    <p>
+                        TimeStamp: 2018/5/30 (Today:
+                        <b id="today"></b>)
+                        <br> Evironment:
+                        <b id="version"></b>
+                        <br> Experimental Staff: Dai Shuyuan(
+                        <b id="name"></b>)
+                    </p>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-md-8 column">
+                    <canvas id="canvas" width="640" height="480" style="background-color:#333333;">
+                        Your browser don't support canvas - dsy
+                    </canvas>
+                </div>
+                <div class="col-md-4 column">
+                    <div>
+                        <textarea id="logger" style="width:340px;height:460px;background-color:white;margin-top: 10px;
+                                background-image: linear-gradient(45deg,#dc7474,rgb(160, 226, 186),#4dd0ee);text-align: center;
+                                font-family: -webkit-body;border-style: hidden;color: blueviolet;" readonly=t rue></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

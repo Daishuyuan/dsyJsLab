@@ -1,0 +1,29 @@
+{
+  "name": "dsyjslab",
+  "version": "1.0.0",
+  "description": "This is a Lab to achieve some ideas in my interests.",
+  "main": "index.js",
+  "scripts": {
+"start":"node index.js",    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "compression": "^1.7.2",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "log4js": "^2.10.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SynchronizedThread/dsyJsLab.git"
+  },
+  "keywords": [
+    "a45676737"
+  ],
+  "author": "dsy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SynchronizedThread/dsyJsLab/issues"
+  },
+  "homepage": "https://github.com/SynchronizedThread/dsyJsLab#readme"
+}

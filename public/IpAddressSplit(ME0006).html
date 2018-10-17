@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ME 0006</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-slider.min.css">
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/Popper.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/layer/layer.js"></script>
+</head>
+
+<body>
+    <div class="view">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-12 column jumbotron">
+                    <h1 class="text-center">IP Address Split (ME 0006)</h1>
+                    <p>
+                        TimeStamp: 2018/9/10 (Today:
+                        <b id="today"></b>)
+                        <br> Evironment: 
+                        <b id="version"></b>
+                        <br> Experimental Staff: Dai Shuyuan(
+                        <b id="name"></b>)
+                    </p>
+                </div>
+            </div>
+            <div id="controlPanel" class="row clearfix">
+                <div class="col-md-6 column">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="segments" placeholder="please input ip address with no points">
+                    </div>
+                </div>
+                <div class="col-md-6 column">
+                    <button id="certain" onclick="initDrawing()" class="btn btn-primary btn-large">Certain</button>
+                </div>
+            </div>
+            <div id="viewPanel" class="row clearfix" style="margin-top:1%;display:none;">
+                <div class="col-md-6 column">
+                    <div><ul id="menu" class="list-group" style="cursor: pointer;"></ul></div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/mineJs/commonIniter.js"></script>
+    <script type="text/javascript" src="/mineJs/ipsplit/IpSplit.js"></script>
+    <script type="text/javascript" src="/mineJs/ipsplit/IpSplitView.js"></script>
+</body>
+
+</html>

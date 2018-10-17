@@ -1,0 +1,8 @@
+[2018-07-02T16:20:56.347] [ERROR] default - { Error: ENOENT: no such file or directory, stat 'K:\study\Ideas\dsyJsLab\resource\data.csv'
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'K:\\study\\Ideas\\dsyJsLab\\resource\\data.csv',
+  expose: false,
+  statusCode: 404,
+  status: 404 }
