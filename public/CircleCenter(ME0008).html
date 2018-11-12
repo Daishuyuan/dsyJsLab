@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ME 0008</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-slider.min.css">
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/Popper.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/layer/layer.js"></script>
+</head>
+
+<body>
+    <div class="view">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-12 column jumbotron">
+                    <h1 class="text-center">CircleCenter (ME 0008)</h1>
+                    <p>
+                        TimeStamp: 2018/10/17 (Today:
+                        <b id="today"></b>)
+                        <br> Evironment: 
+                        <b id="version"></b>
+                        <br> Experimental Staff: Dai Shuyuan(
+                        <b id="name"></b>)
+                    </p>
+                </div>
+            </div>
+            <div id="viewPanel" class="row clearfix" style="margin-top:1%;">
+                <div class="col-md-7 column">
+                    <canvas id="view" width="500px" height="500px" style="
+                        background-image: linear-gradient(45deg,#4d61ee,rgba(0, 0, 0, 0),#89dc74);
+                        border-style: dashed;
+                        border-color: aliceblue;">
+                        Your browser don't support canvas - dsy
+                    </canvas>
+                </div>
+                <div class="col-md-2 column">
+                    <input type="text" style="text-align:center;" id="segControllors" class="form-control" disabled placeholder="waiting for answer...">
+                    
+                </div>
+                <div class="col-md-1 column">
+                    <button onclick="recover()" class="btn btn-primary btn-large">随机生成</button>
+                </div>
+                <div class="col-md-1 column">
+                    <button onclick="recal()" class="btn btn-primary btn-large">开始计算</button>
+                </div>
+                <div class="col-md-1 column">
+                    <button onclick="recal_10()" class="btn btn-primary btn-large">计算10次</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/mineJs/commonIniter.js"></script>
+    <script type="text/javascript" src="/mineJs/cuteBox/PainterMatrix.js"></script>
+    <script type="text/javascript" src="/mineJs/circle/calCircle.js"></script>
+    <script type="text/javascript" src="/mineJs/circle/calCircleView.js"></script>
+</body>
+
+</html>
